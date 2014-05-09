@@ -54,8 +54,8 @@
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 (c-set-offset 'innamespace 0)
 
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/thepeg")
-(load "ThePEG")
+;;(add-to-list 'load-path "/usr/share/emacs/site-lisp/thepeg")
+;;(load "ThePEG")
 
 ;auto-complete
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
