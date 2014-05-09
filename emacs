@@ -58,8 +58,8 @@
 ;;(load "ThePEG")
 
 ;auto-complete
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
 (require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
 (ac-config-default)
 (setq ac-auto-show-menu 0.8)
 (setq ac-use-menu-map t)
