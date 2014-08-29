@@ -51,7 +51,7 @@
   (setq c-basic-offset tab-width)
   (c-set-offset 'arglist-intro '+)
   (setq indent-tabs-mode nil)) ;; force only spaces for indentation
-(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+(add-hook 'c++-mode-hook 'my-c-mode-common-hook)
 (c-set-offset 'innamespace 0)
 
 ;;(add-to-list 'load-path "/usr/share/emacs/site-lisp/thepeg")
@@ -113,3 +113,9 @@ Display the results in a hyperlinked *compilation* buffer."
                                ))
 
 (add-to-list 'auto-mode-alist '("\\.cu$" . c++-mode))
+
+(setq c-default-style "linux")
+(setq-default c-basic-offset 8
+              tab-width 8
+              indent-tabs-mode t)
+(setq-default show-trailing-whitespace t)
